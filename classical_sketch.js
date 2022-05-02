@@ -1,7 +1,13 @@
-const h = 0.001; // the time step constant
-const G = 10000;
-const canvx = 400;
-const canvy = 400;
+const h = 0.001; // discrete time step 
+const G = 10000; // Graviational constant
+const canvx = 400; // width of canvas
+const canvy = 400; // height of canvas
+
+// This is kindof an ugly mix of functional and OOP
+// TODO: re-factor state into an object
+// TODO: Implement other models for graviational attraction
+//        including J's machian theory
+
 
 function setup() {
   frameRate(60);
